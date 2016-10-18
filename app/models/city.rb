@@ -16,6 +16,4 @@ class City < ActiveRecord::Base
     self.lat = places.first.lat
     self.lon = places.first.lon
   end
-
-
 end
