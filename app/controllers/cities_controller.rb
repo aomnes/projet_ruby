@@ -7,8 +7,8 @@ class CitiesController < ApplicationController
     @cities = City.all
    	@cities.each do | city |
 		city.forecast_io
-	end
-   end
+	 end
+  end
 
   # GET /cities/1
   # GET /cities/1.json
