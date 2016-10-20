@@ -15,9 +15,6 @@ angular.module('myApp.view1', ['ngRoute'])
 
     $http.get('/students.json').success(function(data){
       $scope.students = data
-    }, function errorCallback(response) {
-
   	});
-
 
 }]);
