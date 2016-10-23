@@ -1,10 +1,7 @@
 language: ruby
 rvm:
 - 2.3.1
-
 deploy:
-  before_install:
-    - "heroku run bower install"
   provider: heroku
   api_key:
     secure: DPVaE3vqp5VTrkvnm+P76azdGQkQGBjj4hWHu7q/hz3o0Hw63yaLFRfysmMbipI2pYKl3bvlFnQFqv9QZ+mND9GbufV0ecgY3vLTE8CQk7vqmz6Ywq3JtmlsvRHkPN39QflAvq8dqvdoM9/Xym8LR+q7kk/WhysUbwFFKGbxvhU13vVaQ2JBjgAhAqJGtCh1vi9iss73Daq0oMSoN1Nt/78XBvf5IYEoifNqTpdUVtt4mOCjySiaj4NAPLkvh/W9wJbttAEmelDLFRvJgcA2yRN7KggTtJBJY98PDWuczmPgZGln0ZvU7acn/rtHcPW97gh4Y9X/aNHZcM15ZTEcVw08QoXWaEUbCdo3OYHcIr/khVZvJy994u1h8jXlNDBGmWotm8EsQ4THyahqe//3PsglbYs/q7jmDBgImBIT4QV9GiFuVkfa0PMZnnPbGZpgIfL34sTMTdSI2sMJ3e1D9SVlmRpouE4PX+89m5QQKDm0fvX8BpP568xDLVr8WB6nzhGNCVbly9jw69bMfHTiBp8meJxqrz/mERQ6risXN8hn2Ep1HINcIOVA3pUIPtWMVe86bhm1IYzGb3mEsj6WoMTtrX32R7GRkLwfxhbuRj1LYEJ1lkho6QL4liDz/3qXliqyjjmAXDlJ3p68WHvti925HNfnOaTZsVJT2r3rCZQ=
