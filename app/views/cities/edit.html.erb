@@ -1,6 +1,11 @@
+<br />
+<br />
 <h1>Editing city</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @city %> |
-<%= link_to 'Back', cities_path %>
+<br />
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default"><%= link_to 'Back', cities_path %></button>
+  <button type="button" class="btn btn-default"><%= link_to 'Show', @city %></button>
+</div>

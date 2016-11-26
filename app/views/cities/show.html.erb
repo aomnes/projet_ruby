@@ -1,3 +1,6 @@
+<br />
+<br />
+<br />
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -30,5 +33,7 @@
   <%=  @forecasts[:windSpeed] %>
 </p>
 
-<%= link_to 'Edit', edit_city_path(@city) %> |
-<%= link_to 'Back', cities_path %>
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default"><%= link_to 'Back', cities_path %></button>
+  <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_city_path(@city) %></button>
+</div>

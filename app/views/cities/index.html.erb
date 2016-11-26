@@ -1,3 +1,5 @@
+<br />
+<br />
 <h1>Listing cities</h1>
 
 <table>
@@ -9,16 +11,26 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+<hr />
   <tbody>
     <% @cities.each do |city| %>
       <tr>
         <td><%= city.name %></td>
         <td><%= city.lat %></td>
         <td><%= city.lon %></td>
-        <td><%= link_to 'Show', city %></td>
-        <td><%= link_to 'Edit', edit_city_path(city) %></td>
-        <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="btn-group">
+            <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+             <li><a href="#"><%= link_to 'Show', city %></a></li>
+             <li><a href="#"><%= link_to 'Edit', edit_city_path(city) %></a></li>
+             <li role="separator" class="divider"></li>
+             <li><a href="#"><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></a></li>
+            </ul>
+          </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -27,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New City', new_city_path %>
+<a class="btn btn-default" href="cities/new" role="button">New city</a>
