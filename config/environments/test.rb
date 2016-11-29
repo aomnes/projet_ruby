@@ -1,6 +1,11 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  
+  #DEPRECATION WARNING: You did not specify a value for the configuration option `active_support.test_order`. In Rails 5, the default value of this option will change f
+  #rom `:sorted` to `:random`.                                                                                                                                          
+  #To disable this warning and keep the current behavior, you can add the following line to your `config/environments/test.rb`:
+  config.active_support.test_order = :sorted                                                                                                                      
+  
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped
