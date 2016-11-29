@@ -8,3 +8,9 @@ deploy:
   app: meteo-lpa2
   on:
     repo: aomnes/projet_ruby
+addons:
+  code_climate:
+    repo_token: 53ca7d2359c5c22353b8d1efa707c93fd3994994f83c1709d5b223999446f7e7
+# regular test configuration
+after_success:
+  - bundle exec codeclimate-test-reporter
