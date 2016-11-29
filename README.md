@@ -4,3 +4,9 @@
 Projet de l'annee
 
 Premier sujet : faire fonctionner le CI
+
+## Ruby On Rails
+https://meteo-lpa2.herokuapp.com/students
+
+## Angular
+https://meteo-lpa2.herokuapp.com/angular-seed/app/index#!/view1
