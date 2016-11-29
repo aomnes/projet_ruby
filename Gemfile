@@ -56,3 +56,5 @@ gem 'typhoeus', '~> 1.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
+
