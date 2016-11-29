@@ -6,10 +6,12 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
+    VCR.use_cassette("forecast_io") do
     get :index
     assert_response :success
     assert_not_nil assigns(:cities)
     end
+  end
 
   test "should get new" do
     get :new
@@ -26,9 +28,11 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should show city" do
+    VCR.use_cassette("forecast_io") do
     get :show, id: @city
     assert_response :success
     end
+  end
 
   test "should get edit" do
     get :edit, id: @city
