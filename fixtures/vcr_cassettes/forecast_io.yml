@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.darksky.net/forecast/6a60da87109112d036b52fa2f3d9a5f3/1.5,1.5?units=si
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.0
+  response:
+    status:
+      code: 403
+      message: 
+    headers:
+      server:
+      - nginx/1.10.0 (Ubuntu)
+      date:
+      - Tue, 29 Nov 2016 13:12:14 GMT
+      content-type:
+      - text/html; charset=utf-8
+      content-length:
+      - '10'
+      connection:
+      - close
+      x-content-type-options:
+      - nosniff
+      x-response-time:
+      - 4.351ms
+    body:
+      encoding: UTF-8
+      string: 'Forbidden
+
+'
+    http_version: 
+  recorded_at: Tue, 29 Nov 2016 13:12:14 GMT
+recorded_with: VCR 3.0.3
