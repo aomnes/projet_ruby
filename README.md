@@ -8,7 +8,8 @@ UV dans le cadre de mon cursus a l'UTBM
 ## Ruby On Rails
 https://meteo-lpa2.herokuapp.com/students
 
-'/cities' ne fonctionne pas car la clé api forecast_io a été supprimé 
+## Test avec Oauth
+https://meteo-lpa2.herokuapp.com/auth/github/
 
 ## Angular
 https://meteo-lpa2.herokuapp.com/angular-seed/app/index#!/view1
